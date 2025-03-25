@@ -1,0 +1,25 @@
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+
+  select,
+  input[type="search"] {
+    margin-top: 30px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

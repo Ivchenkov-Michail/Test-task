@@ -1,0 +1,27 @@
+.cardPage {
+  margin-top: 20px;
+  &:nth-child(2) {
+    > div {
+      display: flex;
+      justify-content: space-between;
+      > div {
+        display: flex;
+        > div {
+          width: 20px;
+          cursor: pointer;
+          &:not(:first-child) {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  > h2 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  > p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}

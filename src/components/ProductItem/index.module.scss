@@ -1,0 +1,31 @@
+.item {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  margin-top: 30px;
+  transition: all 0.4s ease-in-out;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    > div {
+      width: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  > h3 {
+    margin-top: 40px;
+    -webkit-line-clamp: 1; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+  }
+  &:hover {
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+}
