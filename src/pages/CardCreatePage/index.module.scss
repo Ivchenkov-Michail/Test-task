@@ -1,0 +1,43 @@
+.form {
+  > h2 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  > p {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+}
+.title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.subscribe {
+  width: 400px;
+  margin-top: 26px;
+
+  margin-top: 20px;
+  > p {
+    margin-top: 5px;
+    color: red;
+  }
+
+  > input[type="submit"] {
+    width: 115px;
+    height: 33px;
+    background-color: #000;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 15px;
+  }
+}
+
+.inputName {
+  > input[type="text"] {
+    margin-top: 20px;
+    width: 500px;
+    height: 39px;
+    border: 1px solid #000;
+  }
+}

@@ -1,0 +1,30 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input {
+  padding: 5px 12px;
+  border: 1px solid #000;
+  outline: none;
+  height: 40px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+.input:disabled {
+  background-color: #f3f3f3;
+  cursor: not-allowed;
+}
